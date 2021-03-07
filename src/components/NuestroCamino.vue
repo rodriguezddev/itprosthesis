@@ -46,7 +46,7 @@
             <div class="row flex-column align-items-center mt-3" @mouseover="cambiars(ids[4])" @mouseout="volver()">
                 <div class="circle"></div>
                 <div class="izquierda">
-                    <p class="color-camino">Indrustrializacion</p>
+                    <p class="color-camino">Indrustrialización</p>
                     <p class="color-camino">2022</p>
                 </div>
             </div>

@@ -4,13 +4,13 @@
             <h3 class="text-center texto-form aaa">¿Desea ser beneficiado?</h3>
             <form 
                @submit.prevent="" class="row m-0 flex-column align-items-end">
-                <label class="texto-form">Déjanos tu datos y uno de nuestros asesores se comunicarán contigo</label>
+                <label class="texto-form">Déjanos tu datos y uno de nuestros asesores se comunicará contigo</label>
                 <div class="row flex-column m-0 w-100">
                     <input type="text" v-model="nombre" placeholder="Nombre" class="input-form">
                     <input type="text" v-model="telefono" placeholder="Teléfono" class="input-form">
                     <input type="text" v-model="correo" placeholder="Correo" class="input-form">
-                    <input type="text" v-model="amputacion" placeholder="Tipo de amputacion" class="input-form">
-                    <input type="text" v-model="ocupacion" placeholder="Ocupación" class="input-form">
+                    <input type="text" v-model="amputación" placeholder="Tipo de amputacion" class="input-form">
+                    <input type="text" v-model="ocupación" placeholder="Ocupación" class="input-form">
                 </div>
                 <button type="submit" @click="sendEmail" class="boton-form mt-4 pt-2 pb-2 pl-3 pr-3">Enviar</button>
             </form>
@@ -87,6 +87,7 @@ export default {
     .input-form::placeholder {
         color: #fff;
         font-size: 1rem;
+         font-family: 'aileron';
     }
     .input-form:focus{
         outline: none;
@@ -96,6 +97,7 @@ export default {
         border:none;
         font-weight: bold;
         background: #F7E200; 
+        font-family: 'Aileron-Bold';
     }
 @media only screen and (max-width: 600px){ 
     .fondo-contentdor-fomulario {

@@ -3,14 +3,14 @@
     <div class="contMisionVision row mr-0 ml-0 d-xl-flex d-lg-flex d-md-none d-none">
         <div data-aos="fade-right" class="mision contorno col-md-8">
             <div class=" col-md-6">
-                <p class="textoMV">Proveer de soluciones integrales en materia de tecnologia y  formación a toda la población latinoamericana de personas con una amputación de miembro inferior a través de un  modelo de negocio coherente y accesible para ellos</p>
+                <p class="textoMV">Proveer de soluciones integrales en materia de tecnología y  formación a toda la población latinoamericana de personas con una amputación de miembro inferior a través de un  modelo de negocio coherente y accesible para ellos</p>
                 <h4 class="titleMV">MISIÓN</h4>
             </div>
         </div>
         <div data-aos="fade-left" class="vision contorno col-md-9 row flex-column align-items-end m-0">
             <div class="col-md-6 text-right">
                 <h4 class="titleMV">VISIÓN</h4>
-                <p class="textoMV">Eliminar las brechas sociales de la persona con discapacida física en Latinoamérica por medio de nuestros clientes empoderados, los cuales serán capaces de exigir sus derechos con recursos y argumentos válidos</p>
+                <p class="textoMV">Eliminar las brechas sociales de la persona con discapacidad física en Latinoamérica por medio de nuestros clientes empoderados, los cuales serán capaces de exigir sus derechos con recursos y argumentos válidos</p>
             </div>
         </div>
     </div>
@@ -18,7 +18,7 @@
      <div class="contMisionVision row mr-0 ml-0 d-xl-none d-lg-none d-md-flex d-flex">
         <div data-aos="fade-right" class="misionD contorno col-12">
             <div class=" col-12">
-                <p class="textoMV">Proveer de soluciones integrales en materia de tecnologia y  formación a toda la población latinoamericana de personas con una amputación de miembro inferior a través de un modelo de negocio coherente y accesible para ellos</p>
+                <p class="textoMV">Proveer de soluciones integrales en materia de tecnología y  formación a toda la población latinoamericana de personas con una amputación de miembro inferior a través de un modelo de negocio coherente y accesible para ellos</p>
                 <h4 class="titleMV">MISIÓN</h4>
             </div>
         </div>
@@ -45,29 +45,30 @@ export default {
     .mision{
         background: #2359E5;
         color:#fff;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Kollektif';
         padding:2rem;
         clip-path: polygon(100% 0, 0 0,0 185%);
         position:absolute!important;
         left:0;
-        height: 25rem;
+        height: 21rem;
         z-index: 2;
     }
     .vision{
         background: #FF3A12;
         color:#fff;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Kollektif';
         padding:2rem;
         clip-path: polygon(101% 100%, 0% 100%,100% -161%);
         position:absolute!important;
         right:0;
-        height: 25rem;
+        height: 21rem;
     }
 
     .textoMV{
         line-height: 2;
         letter-spacing: 2px;
-        font-size:1.1rem
+        font-size:1.1rem;
+        font-family: 'Kollektif';
     }
     .titleMV{
         font-size: 43px;

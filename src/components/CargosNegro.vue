@@ -5,7 +5,7 @@
                 <img src="@/assets/fotosdeperfil/youseph.jpg" alt="" class="perfil-tercera-fila adiez">
                 <div class="text-center mt-3">
                     <h5 class="cargo-negro">Youseph Yazdi</h5>
-                    <p class="cargo">ASESOR EN BIODISEÑo</p>
+                    <p class="cargo">ASESOR EN BIODISEÑO</p>
                 </div>
             </div>
             <div class="row flex-column align-items-center m-0 tam-per">
@@ -16,7 +16,7 @@
                 </div>
             </div>
               <div class="row flex-column align-items-center m-0 tam-per">
-                <img src="@/assets/fotosdeperfil/Piero.jpg" alt="" class="perfil-tercera-fila adoce">
+                <img src="@/assets/fotosdeperfil/chino.png" alt="" class="perfil-tercera-fila adoce">
                 <div class="text-center mt-3">
                     <h5 class="cargo-negro">Wangdo Kim</h5>
                     <p class="cargo">ASESOR GENERAL</p>

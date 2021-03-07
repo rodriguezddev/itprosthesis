@@ -6,7 +6,7 @@
             <div>
                 <div data-aos="fade-right"  class="row trazo-azul m-0 cont-viñeta viñeta-uno clipVi mt-4 mb-4">
                     <div class="alinear">
-                        <div class="p-4 mover">
+                        <div class="pl-4 pr-4 mover">
                             <p class="texto-de-azul pl-3">Disfruta de tu nueva prótesis y nuestro programa de empoderamiento desde el primer día a través de una garantía y un pago único mensual.</p>
                         </div>
                         <div data-aos="fade-right" class="tam-paga">
@@ -19,9 +19,9 @@
                  <div data-aos="fade-left"  class="row trazo-rojo  m-0 cont-viñeta viñeta-dos clipViD mt-4 mb-4">
                      <div class="alinearD">
                         <div data-aos="fade-right" class="tam-paga">
-                            <p class="paarD text-end">RENOVAMOS TU PROTESIS</p>
+                            <p class="paarD text-end">RENOVAMOS TU PRÓTESIS</p>
                         </div>
-                        <div class=" p-4 mover">
+                        <div class=" pl-4 pr-4  mover">
                             <p class="texto-de-azul protext pl-3">Nunca más te vuelvas a preocupar por comprar una prótesis nueva. En (it) renovamos tu prótesis cada 3 años completamente gratis, nunca más te preocuparás por gastos adicionales.</p>
                         </div>
                      </div>
@@ -30,8 +30,8 @@
 
                   <div data-aos="fade-right"  class="row trazo-azul m-0 cont-viñeta viñeta-uno clipVi mt-4 mb-4">
                     <div class="alinear">
-                        <div class="p-4 mover">
-                            <p class="texto-de-azul pl-3 protext"> Te acompañamos en todo el proceso. Nosotros hacemos el tramite por ti solo preocúpate de escoger la ortopedia de tu preferencia y asistir a las sesiones de nuestro programa.</p>
+                        <div class="pl-4 pr-4  mover">
+                            <p class="texto-de-azul pl-3 protext"> Te acompañamos en todo el proceso. Nosotros hacemos el trámite por ti solo preocúpate de escoger la ortopedia de tu preferencia y asistir a las sesiones de nuestro programa.</p>
                         </div>
                         <div data-aos="fade-right" class="tam-paga">
                             <p class="paar cont-ultimo text-center ">DE PRINCIPIO A FIN CONTIGO</p>
@@ -72,7 +72,7 @@ export default {
         
     }
     .texto-de-azul{
-        font-size: 2rem;
+        font-size: 1.5rem;
         border-left: 2px solid #fff;
     }
     .viñeta-estilo{
@@ -107,6 +107,7 @@ export default {
     }
     .mover{
         width: 75rem;
+        font-size: 0.9rem
     }
     .tam-paga{
         width: 75rem;
@@ -123,12 +124,12 @@ export default {
         justify-content: space-around;
     }
     .paar{
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin-right: 27rem;
         margin-top: 3rem;
     }
     .paarD{
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin-left: 32rem;
         margin-top: 3rem;
     }

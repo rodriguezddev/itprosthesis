@@ -23,7 +23,7 @@
         </div>
       </div>
 
-       <div data-aos="fade-left" class="col-md-5 col-xl-4 col-lg-5 p-0">
+       <div data-aos="fade-left" class="col-md-5 col-xl-4 col-lg-5 p-0 subir">
         <div class="cont-color-texto-tres">
           <h2 class="color-texto-tres">97%</h2>
         </div>
@@ -80,20 +80,22 @@ export default {
     width: 35rem;
   }
   .margen-icono-it{
-    margin: 4rem auto!important;
+    margin: 2rem auto!important;
   }
   .color-texto-uno{
     color:#fff;
-    font-size: 4rem;
+    font-size: 2.7rem;
     font-weight: 800;
     padding: 0.5rem 1rem;
+    font-family: 'Kollektif-Bold';
   }
   .color-texto-tres{
     color:#fff;
-    font-size: 4rem;
+    font-size: 2.7rem;
     font-weight: 800;
     padding: 0.5rem 1rem;
     text-align: end;
+    font-family: 'Kollektif-Bold';
   }
   .cont-color-texto-uno{
     background-color: #fe3b13;
@@ -101,19 +103,14 @@ export default {
   .texto-dos{
     color: #fe3b13;
     font-size: 2rem;
-    font-weight: 600;
+    font-family: 'Kollektif'
   }
   .cont-texto-dos{
     border-left: solid #fe3b13;
-    margin: 3rem 1rem;
+    margin: 1rem;
     padding: 0rem 1rem;
   }
-    .color-texto-tres{
-    color:#fff;
-    font-size: 4rem;
-    font-weight: 800;
-    padding: 0.5rem 1rem;
-  }
+
   .cont-color-texto-tres{
     background-color: #3755E0;
   }
@@ -127,11 +124,11 @@ export default {
   }
   .cont-texto-cuatro{
     border-right: solid #3755E0;
-    margin: 3rem 1rem;
+    margin: 1rem;
     padding: 0rem 1rem;
   }
   .margen-contenedor{
-    margin: 5rem 0rem;
+        margin: 4rem 0rem 6rem 0;
   }
 
 
@@ -139,6 +136,16 @@ export default {
     transition: all 0.2s esae;
     transform: translate(0%)
   }
+  .titleNumeros{
+    font-family: 'Kollektif-Bold';
+  }
+  .icono-it{
+      width: 25rem;
+  }
+  .subir{
+        margin-top: -2rem;
+  }
+
   @media only screen and (max-width: 600px){ 
     .titleNumeros{
       font-size: 1.7rem;
@@ -159,8 +166,15 @@ export default {
         font-weight: 700;
     }
   }
-  @media only screen and (max-width: 768px) {
-     .titleNumeros{
+  @media only screen and (max-width: 426px) and (min-width: 321px){
+
+  }
+
+  @media only screen and (max-width: 600px) and (min-width: 425px) {
+
+  }
+  @media only screen and (max-width: 768px) and (min-width: 601px){
+      .titleNumeros{
       font-size: 2rem;
       font-weight: bold;
     }
@@ -176,6 +190,33 @@ export default {
         margin: 0;
         font-weight: 700;
     }
+    .texto-dos {
+      color: #fe3b13;
+      font-size: 1.6rem;
+      font-weight: 600;
   }
-  
+  }
+  @media only screen and (max-width: 1204px) and (min-width: 769px) {
+      .titleNumeros{
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .cont-texto-dos{
+      margin-left:0rem
+    }
+    .cont-texto-cuatro{
+      margin-right:0rem
+    }
+    .contempoderamosVerde h2 {
+        text-align: center;
+        font-size: 43px;
+        margin: 0;
+        font-weight: 700;
+    }
+    .texto-dos {
+        color: #fe3b13;
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+  }
 </style>
