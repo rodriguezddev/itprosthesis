@@ -6,7 +6,7 @@
     <div>
       <div data-aos="fade-right" class="row justify-content-center bajarCuadros m-0" >
         <div class="colorHeader col-xl-8 col-lg-11 row justify-content-center align-items-center">
-            <h3 class="titleNumeros">NÚMEROS QUE HABLAN POR SI SOLOS</h3>
+            <h3 class="titleNumeros">NÚMEROS QUE HABLAN POR SÍ SOLOS.</h3>
           </div>
         </div>
       <div class="colorCont"></div>
@@ -18,7 +18,7 @@
         </div>
         <div class="cont-texto-dos">
           <h3 class="texto-dos">
-            Personas necesitan una prótesis de miembro inferior en el perú
+            personas necesitan una prótesis de miembro inferior en el Perú.
           </h3>
         </div>
       </div>
@@ -30,7 +30,7 @@
 
         <div class="cont-texto-cuatro">
           <h3 class="texto-cuatro">
-            de nuestros entrevistados consideran que la información respecto a sus <span class="texto-cuatro-span">derechos y servicios de salud relacionados a su discapacidad es inaccesible para ellos</span>
+            de nuestros entrevistados consideran que la información respecto a sus <span class="texto-cuatro-span">derechos y servicios de salud relacionados a su discapacidad es inaccesible para ellos.</span>
           </h3>
         </div>
 
@@ -48,6 +48,8 @@ export default {
 <style>
   .hello{
     overflow: hidden;
+    margin-top: 4rem;
+    
   }
   .bajarCuadros{
     margin-bottom: 4rem;
@@ -62,6 +64,7 @@ export default {
     height: 8rem;
     color: #fff;
     background: #000;
+    padding: 1rem 2rem;
   }
   .titleNumeros{
     font-size: 2.7rem;
@@ -88,6 +91,8 @@ export default {
     font-weight: 800;
     padding: 0.5rem 1rem;
     font-family: 'Kollektif-Bold';
+    letter-spacing: 7px;
+
   }
   .color-texto-tres{
     color:#fff;
@@ -96,6 +101,7 @@ export default {
     padding: 0.5rem 1rem;
     text-align: end;
     font-family: 'Kollektif-Bold';
+    letter-spacing: 7px;
   }
   .cont-color-texto-uno{
     background-color: #fe3b13;
@@ -118,6 +124,7 @@ export default {
     color: #3755E0;
     font-size: 1.6rem;
     text-align: end;
+    font-family: 'Kollektif'
   }
   .texto-cuatro-span{
     font-weight: 600;
@@ -147,10 +154,86 @@ export default {
   }
 
   @media only screen and (max-width: 600px){ 
+     .hello{
+        overflow: hidden;
+        margin-top: 3rem;
+      }
     .titleNumeros{
-      font-size: 1.7rem;
+      font-size: 1.2rem;
       font-weight: bold;
+      text-align: center;
+      margin: 0;
     }
+    .colorHeader {
+        height: 5rem;
+        color: #fff;
+        background: #000;
+        padding: 0;
+    }
+    .colorCont {
+        background: #f3e143;
+        height: 6rem;
+        width: 75%;
+        margin-top: -5rem;
+    }
+    .color-texto-uno {
+        color: #fff;
+        font-size: 1.7rem;
+        font-weight: 800;
+        padding: 0.5rem 1rem;
+        font-family: 'Kollektif-Bold';
+        letter-spacing: 7px;
+    }
+    .texto-dos {
+        color: #fe3b13;
+        font-size: 1.5rem;
+        font-family: 'Kollektif';
+    }
+    .subir {
+        margin-top: 0rem;
+    }
+    .color-texto-tres{
+        color: #fff;
+        font-size: 1.7rem;
+        font-weight: 800;
+        padding: 0.5rem 1rem;
+        text-align: end;
+        font-family: 'Kollektif-Bold';
+        letter-spacing: 7px;
+        margin-top: 3rem;
+    }
+    .texto-cuatro {
+        color: #3755E0;
+        font-size: 1.5rem;
+        text-align: end;
+        font-family: 'Kollektif';
+    }
+    .texto-cuatro-span{
+      font-family: 'Kollektif-Bold';
+      font-weight: unset;
+    }
+    .margen-contenedor {
+    margin: 2rem;
+    }
+    .contempoderamosVerde h2 {
+        text-align: center;
+        font-size: 20px !important;
+        margin: 0;
+        font-weight: 700;
+    }
+    .contempoderamosVerde {
+      color: #fff;
+      background: #14B71C;
+      padding: 1rem 2rem;
+  }
+
+  .justi {
+      text-align: justify;
+      font-size: 1rem;
+  }
+
+
+
     .margen-icono-it{
       max-width: 50rem;
       margin-left: auto;
@@ -159,19 +242,24 @@ export default {
     .icono-it{
       width: 17rem;
     }
-    .contempoderamosVerde h2 {
-        text-align: center;
-        font-size: 23px !important;
-        margin: 0;
-        font-weight: 700;
-    }
+    
   }
   @media only screen and (max-width: 426px) and (min-width: 321px){
-
+        .colorHeader {
+        height: 5rem;
+        color: #fff;
+        background: #000;
+        padding: 1rem 4rem;
+    }
   }
 
   @media only screen and (max-width: 600px) and (min-width: 425px) {
-
+        .colorHeader {
+        height: 5rem;
+        color: #fff;
+        background: #000;
+        padding: 1rem 4rem;
+    }
   }
   @media only screen and (max-width: 768px) and (min-width: 601px){
       .titleNumeros{

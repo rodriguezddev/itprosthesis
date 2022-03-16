@@ -1,44 +1,52 @@
 <template>
     <div > 
 
-        <div class="cont-color-dinamico" :style="'background:'+ objetoRodilla.color" style="padding-top: 0.55rem;">
-        <h2 class="protesis col-md-5 ">PRÓTESIS</h2>
+        <div class="cont-color-dinamico"  :style="'background:'+ objetoRodilla.color">
+
+        <h2 class="protesis col-md-2 col-6 text-right pr-0 " style=" font-family: 'Kollektif';" :style="'color:' + objetoRodilla.colorFuente + '; border-bottom: solid'+ objetoRodilla.colorFuente + '' " >PRÓTESIS</h2>
+        
         <div>
-            <ul class="row m-0 justify-content-around menu-rodilla p-0">
-                <li class="item-lista">Accesible</li>
-                <li class="item-lista">Modular</li>
-                <li class="item-lista">Multifuncional</li>
-                <li class="item-lista">Ligero</li>
+            <ul class="row m-0 justify-content-around menu-rodilla pl-2 pr-2">
+                <li :style="'color:' + objetoRodilla.colorFuente" class="item-lista">Accesible</li>
+                <li :style="'color:' + objetoRodilla.colorFuente" class="item-lista">Modular</li>
+                <li :style="'color:' + objetoRodilla.colorFuente" class="item-lista">Multifuncional</li>
+                <li :style="'color:' + objetoRodilla.colorFuente" class="item-lista">Ligero</li>
             </ul>
-            <div class="row align-items-center mr-0 ml-0 cont-rodilla-todo pb-4">
+            <div class="row mr-0 ml-0 cont-rodilla-todo padding-bottom: 4rem;" >
                 <div class="row justify-content-around align-items-center mr-4 ml-0 col-md-5 no-mover">
                     <svg class="rodilla" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 467.97 480.21">
                     <defs></defs>
-                    <g id="Capa_2" data-name="Capa 2">
-                        <g id="Capa_7" data-name="Capa 7">
-                            <path class="cls-1" @mouseover="cambiar(index[0])" @mouseleave="inicio()" d="M409.84,46.91V0H44.48S14.49.56,2,36.39c0,0-10.9,28.83,17.92,53.76L294.16,302.82S330,334.76,367.38,334H468V301.2H368.16s-25.31,1.23-57.64-26.43L37.08,62.1S29.29,57.43,34,42.63c0,0,3.9-9.35,11.69-9.35H291.82V46.52Z"/>
-                            <path class="cls-1" @mouseover="cambiar(index[1])" @mouseleave="inicio()" d="M468,346.9v31.42H364.64s-68.71,2-120.43-44.33L25,164.54l20.65-25.32L261.44,306.71s42.84,39.73,101.27,39.73Z"/>
-                            <path class="cls-1" @mouseover="cambiar(index[2])" @mouseleave="inicio()" d="M41.36,351.51v26.82H117.9s24.74-1.11,31.16-26.82c0,0,12.27-31.16-18.11-54.53L58.5,236.21l-17.14,18.9L115,317.62s12.86,9,9.35,24.15c0,0-3.12,10.13-11.69,10.13Z"/>
-                            <rect class="cls-1" @mouseover="cambiar(index[4])" @mouseleave="inicio()" x="39.81" y="447.69" width="428.16" height="32.52"/>
-                            <path class="cls-1" @mouseover="cambiar(index[3])" @mouseleave="inicio()" d="M253.89,373.67c-55.94,0-71.52,21.81-140.72,21.81H39.81v32.43l74-.06c51.42,0,95.82-21.35,140.08-21.35,50,0,85.06,19.79,131,19.79L468,427.91V395.48L384.52,394C335.05,394,301.56,373.67,253.89,373.67Z"/>
+                        <g id="Capa_2" data-name="Capa 2">
+                            <g id="Capa_7" data-name="Capa 7">
+                                <path class="cls-1" @mouseover="cambiar(index[0])" @mouseleave="inicio()" d="M409.84,46.91V0H44.48S14.49.56,2,36.39c0,0-10.9,28.83,17.92,53.76L294.16,302.82S330,334.76,367.38,334H468V301.2H368.16s-25.31,1.23-57.64-26.43L37.08,62.1S29.29,57.43,34,42.63c0,0,3.9-9.35,11.69-9.35H291.82V46.52Z"/>
+
+                                <path class="cls-1" @mouseover="cambiar(index[1])" @mouseleave="inicio()" d="M468,346.9v31.42H364.64s-68.71,2-120.43-44.33L25,164.54l20.65-25.32L261.44,306.71s42.84,39.73,101.27,39.73Z"/>
+
+                                <path class="cls-1" @mouseover="cambiar(index[2])" @mouseleave="inicio()" d="M41.36,351.51v26.82H117.9s24.74-1.11,31.16-26.82c0,0,12.27-31.16-18.11-54.53L58.5,236.21l-17.14,18.9L115,317.62s12.86,9,9.35,24.15c0,0-3.12,10.13-11.69,10.13Z"/>
+
+                                <rect class="cls-1" @mouseover="cambiar(index[4])" @mouseleave="inicio()" x="39.81" y="447.69" width="428.16" height="32.52"/>
+                                
+                                <path class="cls-1" @mouseover="cambiar(index[3])" @mouseleave="inicio()" d="M253.89,373.67c-55.94,0-71.52,21.81-140.72,21.81H39.81v32.43l74-.06c51.42,0,95.82-21.35,140.08-21.35,50,0,85.06,19.79,131,19.79L468,427.91V395.48L384.52,394C335.05,394,301.56,373.67,253.89,373.67Z"/>
                             </g>
                         </g>
                     </svg>
                 </div>
-                <div class="col-md-5">
-                    <div class=" bor-texto" :style="'border-left: 3px solid' +  objetoRodilla.colorFuente">
-                        <div class="row justify-content-center  flex-column ml-4 mr-0">
-                        <span class="font-title" v-html="objetoRodilla.name"></span>
-                            <p class="font-protesis mt-4" :style="'color:' + objetoRodilla.colorFuente">
+                <div class="col-lg-5 mb-4 pb-4 col-md-6 margensisho" style="transition: 1s all ease;" :class="{anim : cam}">
+                    <div class=" " >
+                        <div class="row justify-content-center  flex-column margen-leg mr-0 pl-3" :style="'border-left: 3px solid' +  objetoRodilla.colorFuente">
+                        <span class="font-title row align-items-center m-0 " v-html="objetoRodilla.name"></span>
+                            <p class="font-protesis mt-3 mb-0" :style="'color:' + objetoRodilla.colorFuente">
                                 <span v-html="objetoRodilla.texto"></span>
                             </p>
                         </div>
                     </div>
-                    <div v-html="objetoRodilla.esquema" class="row justify-content-center d-xl-flex d-lg-flex d-md-none d-none"> 
+       
+                    <div v-html="objetoRodilla.esquema" class="row align-items-center justify-content-center d-xl-flex d-lg-flex d-md-flex d-none"  :class="{anim : cam}" style=" transition: 1s all ease; height:15rem; margin-top:2rem"> 
                             
                     </div>
                 </div>
             </div>
+        
         </div>
     </div>
 </div>
@@ -47,25 +55,29 @@
 <script>
 export default {
     name:'Rodilla',
+    props:{
+        start:Boolean
+    },
     data(){
         return {
             datosRodilla:[
                 {
                     id:0,
-                    name:'Quilla I',
+                    name:'QUILLA I',
                     color: '#F7E200',
-                    texto:`Perfecta para el día a día, ir a tu trabajo, pasar tiempo con tu familia e incluso actividades de mediana exigencia física`,
-                    colorFuente:'#000',
+                    texto:'Préparate para el siguiente nivel de actividades todoterreno. La curva pronunciada de la Quilla I esta diseñada para brindarte un mejor retorno de energía y evitar la fatiga excesiva después de un partido de fulbito, salir a correr y cualquier deporte que te propongas.',
+                  
+                    colorFuente:'#424242',
                     esquema:`
-                        <svg class="ml-4 mr-4" xmlns="http://www.w3.org/2000/svg" width="8rem" height="8rem" viewBox="0 0 193.6 162.55"><defs></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_7" data-name="Capa 7"><path class="cls-card" d="M169.55,19.41V0H18.4S6,.23.84,15.06c0,0-4.51,11.92,7.41,22.23l113.44,88s14.83,13.21,30.3,12.89H193.6V124.61H152.31s-10.47.51-23.85-10.94l-113.12-88s-3.22-1.93-1.29-8.06c0,0,1.61-3.86,4.84-3.86H120.73v5.48Z"/><path class="cls-card" d="M35.73,124.73v11.1H67.39a14.44,14.44,0,0,0,12.89-11.1s5.08-12.89-7.49-22.56L42.82,77l-7.09,7.81,30.45,25.87s5.32,3.7,3.87,10c0,0-1.29,4.19-4.83,4.19Z"/><path class="cls-card" d="M105,140.11c-23.14,0-29.58,9-58.21,9H16.47v13.42l30.61,0c21.28,0,39.65-8.83,58-8.83,20.69,0,35.19,8.19,54.21,8.19l34.36.67V149.13l-34.52-.63C138.61,148.5,124.75,140.11,105,140.11Z"/></g></g></svg>
-                        <svg class="ml-4 mr-4" xmlns="http://www.w3.org/2000/svg" width="8rem" height="8rem" viewBox="0 0 201.46 158.12"><defs></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_7" data-name="Capa 7"><path class="cls-card" d="M169.55,19.41V0H18.4S6,.23.84,15.06c0,0-4.51,11.92,7.41,22.23l113.44,88s14.83,13.21,30.3,12.89H193.6V124.61H152.31s-10.47.51-23.85-10.94l-113.12-88s-3.22-1.93-1.29-8.06c0,0,1.61-3.86,4.84-3.86H120.73v5.48Z"/><path class="cls-card" d="M35.73,124.73v11.1H67.39a14.44,14.44,0,0,0,12.89-11.1s5.08-12.89-7.49-22.56L42.82,77l-7.09,7.81,30.45,25.87s5.32,3.7,3.87,10c0,0-1.29,4.19-4.83,4.19Z"/><rect class="cls-card" x="24.33" y="144.67" width="177.13" height="13.45"/></g></g></svg>
+                        <svg class="ml-4 mr-4 " xmlns="http://www.w3.org/2000/svg" width="8rem" height="8rem" viewBox="0 0 193.6 162.55"><defs></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_7" data-name="Capa 7"><path class="cls-card" d="M169.55,19.41V0H18.4S6,.23.84,15.06c0,0-4.51,11.92,7.41,22.23l113.44,88s14.83,13.21,30.3,12.89H193.6V124.61H152.31s-10.47.51-23.85-10.94l-113.12-88s-3.22-1.93-1.29-8.06c0,0,1.61-3.86,4.84-3.86H120.73v5.48Z"/><path class="cls-card" d="M35.73,124.73v11.1H67.39a14.44,14.44,0,0,0,12.89-11.1s5.08-12.89-7.49-22.56L42.82,77l-7.09,7.81,30.45,25.87s5.32,3.7,3.87,10c0,0-1.29,4.19-4.83,4.19Z"/><path class="cls-card" d="M105,140.11c-23.14,0-29.58,9-58.21,9H16.47v13.42l30.61,0c21.28,0,39.65-8.83,58-8.83,20.69,0,35.19,8.19,54.21,8.19l34.36.67V149.13l-34.52-.63C138.61,148.5,124.75,140.11,105,140.11Z"/></g></g></svg>
+                        <svg class="ml-4 mr-4 " xmlns="http://www.w3.org/2000/svg" width="8rem" height="8rem" viewBox="0 0 201.46 158.12"><defs></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_7" data-name="Capa 7"><path class="cls-card" d="M169.55,19.41V0H18.4S6,.23.84,15.06c0,0-4.51,11.92,7.41,22.23l113.44,88s14.83,13.21,30.3,12.89H193.6V124.61H152.31s-10.47.51-23.85-10.94l-113.12-88s-3.22-1.93-1.29-8.06c0,0,1.61-3.86,4.84-3.86H120.73v5.48Z"/><path class="cls-card" d="M35.73,124.73v11.1H67.39a14.44,14.44,0,0,0,12.89-11.1s5.08-12.89-7.49-22.56L42.82,77l-7.09,7.81,30.45,25.87s5.32,3.7,3.87,10c0,0-1.29,4.19-4.83,4.19Z"/><rect class="cls-card" x="24.33" y="144.67" width="177.13" height="13.45"/></g></g></svg>
                     `
                 },
                  {
                     id:1,
-                    name:'Quilla II',
+                    name:'QUILLA II',
                     color: '#66B42B',
-                    texto:'Préparate para el siguiente nivel de actividades todoterreno. La curva pronunciada de la Quilla II esta diseñada para brindarte un mejor retorno de energía y evitar la fatiga excesiva después de un partido de fulbito, salir a correr y cualquier deporte que te propongas.',
+                    texto:`Perfecta para el día a día, ir a tu trabajo, pasar tiempo con tu familia e incluso actividades de mediana exigencia física.`,
                     colorFuente:'#424242;',
                     esquema:`
                         <svg class="ml-4 mr-4" xmlns="http://www.w3.org/2000/svg" width="8rem" height="8rem" viewBox="0 0 183.25 121.21"><defs></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_7" data-name="Capa 7"><path class="cls-card" d="M183.25,85.92v13H140.51s-28.43.85-49.82-18.33L0,10.47,8.54,0,97.81,69.29s17.73,16.44,41.9,16.44Z"/><path class="cls-card" d="M17.52,87.82v11.1H49.19a14.45,14.45,0,0,0,12.89-11.1s5.08-12.89-7.49-22.56l-30-25.14-7.09,7.82L48,73.8s5.32,3.71,3.87,10c0,0-1.29,4.19-4.84,4.19Z"/><rect class="cls-card" x="6.12" y="107.75" width="177.13" height="13.45"/></g></g></svg>
@@ -75,7 +87,7 @@ export default {
                 },
                  {
                     id:2,
-                    name:'TACON',
+                    name:'TACÓN',
                     color: '#DD3B00',
                     texto:`El mejor complemento para esas actividades que requieren de saltos, trotes, o para una larga caminata.`,
                     colorFuente:'#424242;',
@@ -91,45 +103,47 @@ export default {
                     id:3,
                     name:'PLANTA CURVA',
                     color: '#E58300',
-                    texto:`Experimenta un mayor retorno de energía con la curvatura de la planta y alístate para las actividades más exigentes`,
+                    texto:`Experimenta un mayor retorno de energía con la curvatura de la planta y alístate para las actividades más exigentes.`,
                     colorFuente:'#424242;',
                     esquema:`
-                        <svg class="ml-4 mr-4" width="10rem" height="10rem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 185.74 121.09"><defs></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_7" data-name="Capa 7"><path class="cls-card" d="M183.25,85.92v13H140.51s-28.43.85-49.82-18.33L0,10.47,8.54,0,97.81,69.29s17.73,16.44,41.9,16.44Z"/><path class="cls-card" d="M17.52,87.82v11.1H49.19a14.45,14.45,0,0,0,12.89-11.1s5.08-12.89-7.49-22.56l-30-25.14-7.09,7.82L48,73.8s5.32,3.71,3.87,10c0,0-1.29,4.19-4.84,4.19Z"/><path class="cls-card" d="M97.17,98.64c-23.14,0-29.59,9-58.21,9H8.61v13.42l30.61,0c21.27,0,39.64-8.83,58-8.83,20.69,0,35.19,8.19,54.21,8.19l34.36.67V107.67L151.22,107C130.75,107,116.89,98.64,97.17,98.64Z"/></g></g></svg>
-                        <svg class="ml-4 mr-4" width="10rem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 193.6 162.55"><defs></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_7" data-name="Capa 7"><path class="cls-card" d="M169.55,19.41V0H18.4S6,.23.84,15.06c0,0-4.51,11.92,7.41,22.23l113.44,88s14.83,13.21,30.3,12.89H193.6V124.61H152.31s-10.47.51-23.85-10.94l-113.12-88s-3.22-1.93-1.29-8.06c0,0,1.61-3.86,4.84-3.86H120.73v5.48Z"/><path class="cls-card" d="M35.73,124.73v11.1H67.39a14.44,14.44,0,0,0,12.89-11.1s5.08-12.89-7.49-22.56L42.82,77l-7.09,7.81,30.45,25.87s5.32,3.7,3.87,10c0,0-1.29,4.19-4.83,4.19Z"/><path class="cls-card" d="M105,140.11c-23.14,0-29.58,9-58.21,9H16.47v13.42l30.61,0c21.28,0,39.65-8.83,58-8.83,20.69,0,35.19,8.19,54.21,8.19l34.36.67V149.13l-34.52-.63C138.61,148.5,124.75,140.11,105,140.11Z"/></g></g></svg>
+                        <svg class="ml-4 mr-4" width="8rem" height="10rem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 185.74 121.09"><defs></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_7" data-name="Capa 7"><path class="cls-card" d="M183.25,85.92v13H140.51s-28.43.85-49.82-18.33L0,10.47,8.54,0,97.81,69.29s17.73,16.44,41.9,16.44Z"/><path class="cls-card" d="M17.52,87.82v11.1H49.19a14.45,14.45,0,0,0,12.89-11.1s5.08-12.89-7.49-22.56l-30-25.14-7.09,7.82L48,73.8s5.32,3.71,3.87,10c0,0-1.29,4.19-4.84,4.19Z"/><path class="cls-card" d="M97.17,98.64c-23.14,0-29.59,9-58.21,9H8.61v13.42l30.61,0c21.27,0,39.64-8.83,58-8.83,20.69,0,35.19,8.19,54.21,8.19l34.36.67V107.67L151.22,107C130.75,107,116.89,98.64,97.17,98.64Z"/></g></g></svg>
+                        <svg class="ml-4 mr-4" width="8rem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 193.6 162.55"><defs></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_7" data-name="Capa 7"><path class="cls-card" d="M169.55,19.41V0H18.4S6,.23.84,15.06c0,0-4.51,11.92,7.41,22.23l113.44,88s14.83,13.21,30.3,12.89H193.6V124.61H152.31s-10.47.51-23.85-10.94l-113.12-88s-3.22-1.93-1.29-8.06c0,0,1.61-3.86,4.84-3.86H120.73v5.48Z"/><path class="cls-card" d="M35.73,124.73v11.1H67.39a14.44,14.44,0,0,0,12.89-11.1s5.08-12.89-7.49-22.56L42.82,77l-7.09,7.81,30.45,25.87s5.32,3.7,3.87,10c0,0-1.29,4.19-4.83,4.19Z"/><path class="cls-card" d="M105,140.11c-23.14,0-29.58,9-58.21,9H16.47v13.42l30.61,0c21.28,0,39.65-8.83,58-8.83,20.69,0,35.19,8.19,54.21,8.19l34.36.67V149.13l-34.52-.63C138.61,148.5,124.75,140.11,105,140.11Z"/></g></g></svg>
                     `
                 },
                  {
                     id:4,
                     name:'PLANTA PLANA',
                     color: '#77D9FF',
-                    texto:`Este elemento te dará una mejor sensación de balance y seguridad, perfecto para reuniones sociales, para el día a día o para ir al trabajo `,
+                    texto:`Este elemento te dará una mejor sensación de balance y seguridad, perfecto para reuniones sociales, para el día a día o para ir al trabajo. `,
                     colorFuente:'#424242;',
                     esquema:`
-                        <svg class="ml-4 mr-4" width="10rem" height="10rem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183.25 121.21"><defs></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_7" data-name="Capa 7"><path class="cls-card" d="M183.25,85.92v13H140.51s-28.43.85-49.82-18.33L0,10.47,8.54,0,97.81,69.29s17.73,16.44,41.9,16.44Z"/><path class="cls-card" d="M17.52,87.82v11.1H49.19a14.45,14.45,0,0,0,12.89-11.1s5.08-12.89-7.49-22.56l-30-25.14-7.09,7.82L48,73.8s5.32,3.71,3.87,10c0,0-1.29,4.19-4.84,4.19Z"/><rect class="cls-card" x="6.12" y="107.75" width="177.13" height="13.45"/></g></g></svg>
-                        <svg class="ml-4 mr-4" width="10rem" height="10rem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 201.46 158.12"><defs></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_7" data-name="Capa 7"><path class="cls-card" d="M169.55,19.41V0H18.4S6,.23.84,15.06c0,0-4.51,11.92,7.41,22.23l113.44,88s14.83,13.21,30.3,12.89H193.6V124.61H152.31s-10.47.51-23.85-10.94l-113.12-88s-3.22-1.93-1.29-8.06c0,0,1.61-3.86,4.84-3.86H120.73v5.48Z"/><path class="cls-card" d="M35.73,124.73v11.1H67.39a14.44,14.44,0,0,0,12.89-11.1s5.08-12.89-7.49-22.56L42.82,77l-7.09,7.81,30.45,25.87s5.32,3.7,3.87,10c0,0-1.29,4.19-4.83,4.19Z"/><rect class="cls-card" x="24.33" y="144.67" width="177.13" height="13.45"/></g></g></svg>
+                        <svg class="ml-4 mr-4" width="8rem" height="8rem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183.25 121.21"><defs></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_7" data-name="Capa 7"><path class="cls-card" d="M183.25,85.92v13H140.51s-28.43.85-49.82-18.33L0,10.47,8.54,0,97.81,69.29s17.73,16.44,41.9,16.44Z"/><path class="cls-card" d="M17.52,87.82v11.1H49.19a14.45,14.45,0,0,0,12.89-11.1s5.08-12.89-7.49-22.56l-30-25.14-7.09,7.82L48,73.8s5.32,3.71,3.87,10c0,0-1.29,4.19-4.84,4.19Z"/><rect class="cls-card" x="6.12" y="107.75" width="177.13" height="13.45"/></g></g></svg>
+                        <svg class="ml-4 mr-4" width="8rem" height="8rem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 201.46 158.12"><defs></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_7" data-name="Capa 7"><path class="cls-card" d="M169.55,19.41V0H18.4S6,.23.84,15.06c0,0-4.51,11.92,7.41,22.23l113.44,88s14.83,13.21,30.3,12.89H193.6V124.61H152.31s-10.47.51-23.85-10.94l-113.12-88s-3.22-1.93-1.29-8.06c0,0,1.61-3.86,4.84-3.86H120.73v5.48Z"/><path class="cls-card" d="M35.73,124.73v11.1H67.39a14.44,14.44,0,0,0,12.89-11.1s5.08-12.89-7.49-22.56L42.82,77l-7.09,7.81,30.45,25.87s5.32,3.7,3.87,10c0,0-1.29,4.19-4.83,4.19Z"/><rect class="cls-card" x="24.33" y="144.67" width="177.13" height="13.45"/></g></g></svg>
                     `
                 }
             ],
+            cam:false,
             index:[0,1,2,3,4],
             objetoRodilla:{},
             reinicio:{
-                name:`<svg xmlns="http://www.w3.org/2000/svg" class="leg" viewBox="0 0 564.05 179.45"><defs></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_6" data-name="Capa 6"><path class="cls-leg" d="M91.19,162.76H0v-144H7.93V155.87H91.19Z"/><path class="cls-leg" d="M205.53,162.76H114.34v-144h89.1v6.68H122.27v62h76.37v6.68H122.27v61.76h83.26Z"/><path class="cls-leg" d="M344.91,97.24v65.52h-7.3V127.91l-4.8,13.36c-11.06,17.31-28.8,24.41-46.74,24.41-37.77,0-63.65-28.8-63.65-74.49,0-44.66,28.59-75.33,67.61-75.33,32.76,0,50.71,20.24,55.3,46.53l.41,2.09h-7.93l-.41-2.09c-4.59-22.74-20.66-39.65-48.2-39.65-30.89,0-58,24.84-58,68,0,44.86,24.62,68,55.5,68,22.12,0,50.29-15,50.29-54.67H292.12V97.24Z"/><path class="cls-2" d="M414.39,0C399,25.46,390.18,57.59,390.18,89.73S399,154,414.39,179.45H405c-15.23-22.95-24.83-56.76-24.83-89.72S389.77,23,405,0Z"/><path class="cls-leg" d="M448.55,28.59c0,4.8-3,8.76-7,8.76-3.81,0-7-4-7-8.76,0-5,3.15-8.77,7-8.77C445.57,19.82,448.55,23.58,448.55,28.59Zm-12.1,134.17V52.37h10.28V162.76Z"/><path class="cls-leg" d="M497.43,132.5c0,4.59,0,6.89.21,9.81.83,10.64,5.42,13.35,20.24,11.48v9.59a71.58,71.58,0,0,1-13.36,1.05c-12.31,0-18.78-5.43-19.82-17.53-.21-3.76-.21-7.93-.21-14.19V63.23H470.3v-10h14.19V28.8h12.94V53.21H518.5v10H497.43Z"/><path class="cls-2" d="M540.07,5.62c14.71,22.16,24,54.8,24,86.63s-9.27,64.46-24,86.62h-8.86c14.71-24.57,23.17-55.6,23.17-86.62s-8.46-62-23.17-86.63Z"/></g></g></svg>`,
+                name:`<svg  class="leg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 557.05 166.74"><defs></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_6" data-name="Capa 6"><path class="cls-leg" d="M91.19,146.9H0V2.92H7.93V140H91.19Z"/><path class="cls-leg" d="M205.53,146.9H114.34V2.92h89.1V9.6H122.27v62h76.37v6.68H122.27V140h83.26Z"/><path class="cls-leg" d="M344.91,81.38V146.9h-7.3V112.05l-4.8,13.36c-11.06,17.32-28.8,24.41-46.74,24.41-37.77,0-63.65-28.8-63.65-74.49C222.42,30.67,251,0,290,0c32.76,0,50.71,20.24,55.3,46.53l.41,2.09h-7.93l-.41-2.09c-4.59-22.74-20.66-39.64-48.2-39.64-30.89,0-58,24.83-58,68,0,44.86,24.62,68,55.5,68,22.12,0,50.29-15,50.29-54.67H292.12V81.38Z"/><path class="cls-2" d="M420.79,3.36c-14.05,23.18-22,52.44-22,81.69s8,58.51,22,81.69h-8.54c-13.87-20.9-22.61-51.67-22.61-81.69s8.74-60.79,22.61-81.69Z"/><path class="cls-leg" d="M452.15,12.73a8.68,8.68,0,0,1-8.76,8.76,8.81,8.81,0,0,1-8.76-8.76A8.68,8.68,0,0,1,443.39,4,8.56,8.56,0,0,1,452.15,12.73ZM436.92,146.9V36.52h12.94V146.9Z"/><path class="cls-leg" d="M497.43,116.64c0,4.59,0,6.89.21,9.81.83,10.64,5.42,13.35,20.24,11.48v9.6a72.42,72.42,0,0,1-13.36,1c-12.31,0-18.78-5.43-19.82-17.53-.21-3.75-.21-7.93-.21-14.19V47.37H470.3v-10h14.19V12.94h12.94V37.35H518.5v10H497.43Z"/><path class="cls-2" d="M535.22,6.18c13.39,20.18,21.83,49.89,21.83,78.87s-8.44,58.69-21.83,78.87h-8.07c13.39-22.38,21.09-50.62,21.09-78.87s-7.7-56.49-21.09-78.87Z"/></g></g></svg>`,
                 color: '#3755E0;',
                 texto:`Nuestra prótesis <span><svg xmlns="http://www.w3.org/2000/svg" class="leg-rodilla" viewBox="0 0 564.05 179.45"><defs></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_6" data-name="Capa 6"><path class="cls-leg" d="M91.19,162.76H0v-144H7.93V155.87H91.19Z"/><path class="cls-leg" d="M205.53,162.76H114.34v-144h89.1v6.68H122.27v62h76.37v6.68H122.27v61.76h83.26Z"/><path class="cls-leg" d="M344.91,97.24v65.52h-7.3V127.91l-4.8,13.36c-11.06,17.31-28.8,24.41-46.74,24.41-37.77,0-63.65-28.8-63.65-74.49,0-44.66,28.59-75.33,67.61-75.33,32.76,0,50.71,20.24,55.3,46.53l.41,2.09h-7.93l-.41-2.09c-4.59-22.74-20.66-39.65-48.2-39.65-30.89,0-58,24.84-58,68,0,44.86,24.62,68,55.5,68,22.12,0,50.29-15,50.29-54.67H292.12V97.24Z"/><path class="cls-2" d="M414.39,0C399,25.46,390.18,57.59,390.18,89.73S399,154,414.39,179.45H405c-15.23-22.95-24.83-56.76-24.83-89.72S389.77,23,405,0Z"/><path class="cls-leg" d="M448.55,28.59c0,4.8-3,8.76-7,8.76-3.81,0-7-4-7-8.76,0-5,3.15-8.77,7-8.77C445.57,19.82,448.55,23.58,448.55,28.59Zm-12.1,134.17V52.37h10.28V162.76Z"/><path class="cls-leg" d="M497.43,132.5c0,4.59,0,6.89.21,9.81.83,10.64,5.42,13.35,20.24,11.48v9.59a71.58,71.58,0,0,1-13.36,1.05c-12.31,0-18.78-5.43-19.82-17.53-.21-3.76-.21-7.93-.21-14.19V63.23H470.3v-10h14.19V28.8h12.94V53.21H518.5v10H497.43Z"/><path class="cls-2" d="M540.07,5.62c14.71,22.16,24,54.8,24,86.63s-9.27,64.46-24,86.62h-8.86c14.71-24.57,23.17-55.6,23.17-86.62s-8.46-62-23.17-86.63Z"/></g></g></svg></span> 
                         está diseñada para que estés preparado ante cualquier ocasión. La diversidad de configuraciones le ofrece al usuario la posibilidad de decidir el tipo de prótesis que requiere según la actividad que desempeñará. Con <span><svg xmlns="http://www.w3.org/2000/svg" class="leg-rodilla" viewBox="0 0 564.05 179.45"><defs></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_6" data-name="Capa 6"><path class="cls-leg" d="M91.19,162.76H0v-144H7.93V155.87H91.19Z"/><path class="cls-leg" d="M205.53,162.76H114.34v-144h89.1v6.68H122.27v62h76.37v6.68H122.27v61.76h83.26Z"/><path class="cls-leg" d="M344.91,97.24v65.52h-7.3V127.91l-4.8,13.36c-11.06,17.31-28.8,24.41-46.74,24.41-37.77,0-63.65-28.8-63.65-74.49,0-44.66,28.59-75.33,67.61-75.33,32.76,0,50.71,20.24,55.3,46.53l.41,2.09h-7.93l-.41-2.09c-4.59-22.74-20.66-39.65-48.2-39.65-30.89,0-58,24.84-58,68,0,44.86,24.62,68,55.5,68,22.12,0,50.29-15,50.29-54.67H292.12V97.24Z"/><path class="cls-2" d="M414.39,0C399,25.46,390.18,57.59,390.18,89.73S399,154,414.39,179.45H405c-15.23-22.95-24.83-56.76-24.83-89.72S389.77,23,405,0Z"/><path class="cls-leg" d="M448.55,28.59c0,4.8-3,8.76-7,8.76-3.81,0-7-4-7-8.76,0-5,3.15-8.77,7-8.77C445.57,19.82,448.55,23.58,448.55,28.59Zm-12.1,134.17V52.37h10.28V162.76Z"/><path class="cls-leg" d="M497.43,132.5c0,4.59,0,6.89.21,9.81.83,10.64,5.42,13.35,20.24,11.48v9.59a71.58,71.58,0,0,1-13.36,1.05c-12.31,0-18.78-5.43-19.82-17.53-.21-3.76-.21-7.93-.21-14.19V63.23H470.3v-10h14.19V28.8h12.94V53.21H518.5v10H497.43Z"/><path class="cls-2" d="M540.07,5.62c14.71,22.16,24,54.8,24,86.63s-9.27,64.46-24,86.62h-8.86c14.71-24.57,23.17-55.6,23.17-86.62s-8.46-62-23.17-86.63Z"/></g></g></svg></span> 
-                        estarás preparado para ir al trabajo, pasar un día familiar o incluso hacer el deporte que más te guste`,
+                        estarás preparado para ir al trabajo, pasar un día familiar o incluso hacer el deporte que más te guste. <span class="cursor">Desliza el cursor encima de la prótesis para apreciar todas nuestras configuraciones.</span>`,
                 colorFuente:'#fff'
-            }
+            },
+              
         }
     },
     methods: {
         cambiar(index){
-            console.log(index)
             this.objetoRodilla = this.datosRodilla[index]
-            
+            this.cam = true
         },
         inicio(){
             this.objetoRodilla = this.reinicio
+            this.cam = false
         }
     },
     created(){
@@ -139,38 +153,45 @@ export default {
 </script>
 <style>
     .protesis{
-        margin-left: 3rem;
-        font-size: 2.8rem;
-        padding: 0;
+        padding-left: 3rem;
+        font-size: 2rem;
         margin-bottom: 1.3rem;
         padding-top: 2rem;
         color: #ffffff;
     }
-    .protesis::after{
-        content: '';
-        display: block;
-        height: 0.2rem;
-        width: 22rem;
-        background-color:   rgb(255, 255, 255);
-        margin-left:-3.6rem;
+    .anim{
+        height: auto;
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity 0.3s ease-out, transform 0.3s ease-out!important;
     }
+
+
+
     .menu-rodilla {
         color: #ffffff;
         font-size: 1.5rem;
     }
     .font-title{
         font-size: 4rem;
-        transition: 0.4s all ease;
+        transition: 1s all ease;
         color: #424242;
+        line-height:60px;
+           font-family: 'Kollektif';
+    }
+    .cursor{
+           font-family: 'Kollektif-Bold';
     }
     .cls-1{
         fill:#fff;
+        transition: 1s all ease;
     }
     .cls-1:hover{
-        fill:#000;
+        fill:#424242;
+        transition: 1s all ease;
     }
     .rodilla{
-        width: 17rem;
+        width: 20rem;
     }
   
     .cls-leg{
@@ -183,35 +204,48 @@ export default {
         width: 18rem;
     }
     .leg-rodilla{
-        width: 4rem;
+        width: 3rem;
+        margin-bottom: 0.3rem
     }
     .font-protesis{
         font-size: 1rem;
         color: #fff;
-        transition: 0.4s all ease;
-        text-align: justify
+        transition: 1s all ease;
+        text-align: justify;
+           font-family: 'Kollektif';
     }
     .bor-texto{
         border-left: 3px solid #fff;
+        width: 35rem;
     }
     .no-mover{
-        height: 32rem;
+        height: 35rem;
     }
     /*valores dinamicos*/
     .cont-color-dinamico{
         background: #3755E0;
-        transition: 0.4s all ease;
-        padding-bottom: 5rem;
+        transition: 1s all ease;
+        height: 100%;
+        width: 100%;
+        padding-top: 3rem;
     }
 
     .cls-card{
         fill:#424242;
     }
 
-
+    .item-lista{
+        font-family: 'Kollektif';
+    }
+    .margensisho{
+        margin-top:5rem;
+    }
 @media only screen and (max-width: 600px){ 
     .leg{
         width: 15rem;
+    }
+    .protesis{
+        font-size: 1.5rem;
     }
     .font-protesis{
         font-size: 1rem;
@@ -226,14 +260,47 @@ export default {
     .item-lista{
         font-size: 1rem;
     }
+    .no-mover {
+        height: 25rem;
+    }
+    .margensisho{
+        margin-top:2rem;
+    }
+    .rodilla{
+        width: 17rem;
+    }
+    .margen-leg {
+        margin-left:1.5rem
+    }
 }
 @media only screen and (max-width: 768px) {
     .leg {
-        width: 19rem;
+        width: 15rem;
     }
     .item-lista {
-        font-size: 1.2rem;
+        font-size: 0.9rem;
         margin-bottom: 2rem;
+    }
+       .font-protesis{
+        font-size: 0.8rem;
+        color: #fff;
+        transition: 1s all ease;
+        text-align: justify
+    }
+    .font-title{
+        font-size: 2rem;
+        transition: 1s all ease;
+        color: #424242;
+        line-height:30px;
+    }
+    .no-mover {
+        height: 25rem;
+    }
+    .margensisho{
+        margin-top:2rem;
+    }
+    .margen-leg {
+        margin-left:0.5rem!important
     }
 }
 @media only screen and (max-width: 1440){ 

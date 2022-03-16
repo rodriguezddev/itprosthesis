@@ -1,13 +1,18 @@
 <template>
-    <div class="cont-programa m-0" :style="'background:'+ aggColor" style=" transition: 0.5s ease all;">
-        <h2 class="programa col-md-5">PROGRAMA DE EMPODERAMIENTO</h2>
-        <div class="row justify-content-center m-0">
-            <div class="row justify-content-center m-0 p-4">
-                <p class="col-md-9  font-texto-programa border-texto-programa-em">El programa de empoderamiento de (it) es parte de nuestro servicio integral que tiene como objetivo brindarles a nuestros clientes la capaciadad de conocer las aristas más relevantes que conlleva identificarse como una persona con discapacidad.
-                    En este programa te proveemos de los mejores recursos en materia de derechos, teorías de la discapacidad, prótesis, experiencias similares, registros de identidad, entre otros. De esta forma, estarás preparado para afrontar y exigir tus derechos cuando las circunstancias lo ameriten.
-                </p>
+    <div class="cont-programa m-0 row justify-content-center flex-column align-items-start" :style="'background:'+ aggColor" style=" transition: 0.5s ease all;  padding-top: 3.1rem;">
+        <div class="row justify-content-around flex-column align-items-center m-0 h-100">
+            <div class="response">
+                <span class="">
+                    <h2 class="protesis voviendo titulo-mergen pt-0 pr-0 col-md-5 col-7" style=" font-family: 'Kollektif';border-bottom: solid #fff">PROGRAMA DE <br/> EMPODERAMIENTO</h2>
+                </span>
+                
+                <div class="m-0 p-4 row flex-column align-items-center" style=" height: 10rem;">
+                    <p class="col-md-9 font-texto-programa border-texto-programa-em">El programa de empoderamiento de (it) es parte de nuestro servicio integral que tiene como objetivo brindarles a nuestros clientes la capaciadad de conocer las aristas más relevantes que conlleva identificarse como una persona con discapacidad.
+                        En este programa te proveemos de los mejores recursos en materia de derechos, teorías de la discapacidad, prótesis, experiencias similares, registros de identidad, entre otros. De esta forma, estarás preparado para afrontar y exigir tus derechos cuando las circunstancias lo ameriten.
+                    </p>
+                </div>
             </div>
-            <div class="my-2">
+            <div class=" moversito" style=" transition: all ease 1s;">
                 <div class="borde-animacion row flex-column justify-content-between">
                     <div class="tam-equema">
                         <div class="cont-texto-centro">
@@ -69,7 +74,7 @@ export default {
                 "ACCESOS A ONG'S"
             ],
             textocentro:'SOPORTE EMOCIONAL',
-            colores:['#14B71C', '#2359E5', '#FF3A12', '#f3e143','#852DDD', '#CC8A81'],
+            colores:['#14B71C', '#2359E5', '#FF00B6 ', '#f3e143','#852DDD', '#FF9300 '],
             aggColor:'#DD3B00'
         }
     },
@@ -93,8 +98,7 @@ export default {
         padding-bottom: 5rem; 
     }
       .programa{
-        margin-left:3rem;
-        font-size: 2.8rem;
+        font-size: 2rem;
         padding: 0;
         margin-bottom: 1rem;
         color: #fff;
@@ -105,12 +109,14 @@ export default {
         height: 0.2rem;
         width: 100%;
         background-color:   #fff;
-        margin-left:-3.6rem;
+        margin-left: -4rem
     }
     .font-texto-programa{
         color: #fff;
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         text-align: justify;
+        transition: all ease 2s;
+       
     }
     .borde-animacion{
         width: 20rem;
@@ -163,14 +169,105 @@ export default {
     }
     .texto-centro{
         color: #fff;
-        font-size: 1.9rem;
+        font-size: 1rem;
         font-weight: 700;
         transition: 1s all ease;
     }
     .border-texto-programa-em{
         border-left: solid 4px #fff;
     }
-    @media only screen and (max-width: 600px){ 
+    .moversito{
+        margin-right: 6rem;
+        margin-top: 4rem;
+    }
+    .voviendo{
+        padding-left: 4.3rem;
+        margin-right:0rem;
+    }
+    .titulo-mergen{
+        width: 23rem;
+    }
+     @media only screen and (max-width: 320px){
+           .font-texto-programa {
+            color: #fff;
+            font-size: 0.8rem;
+            text-align: justify;
+            transition: all ease 2s;
+        }
+        .borde-animacion {
+            width: 15rem;
+            height: 15rem;
+            border: dashed #fff;
+            border-radius: 100%;
+        }
+        .tam-equema {
+            height: 20rem;
+            width: 20rem;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: -3rem;
+            margin-top: -3rem;
+        }
+        .moversito{
+            margin-right: 0rem;
+            margin-top: 7rem;
+        }
+        .bolita {
+            width: 4rem;
+            height: 4rem;
+            background-color: #fff;
+            border-radius: 100%;
+            transition: 0.4s ease all;
+        }
+        .moversito{
+            margin-right: 0rem;
+            margin-top: 13rem;
+        }
+     }
+    @media only screen and (max-width: 458px) and (min-width: 321px){
+                .font-texto-programa {
+                    color: #fff;
+                    font-size: 0.8rem;
+                    text-align: justify;
+                    transition: all ease 2s;
+                }
+                .borde-animacion {
+                    width: 15rem;
+                    height: 15rem;
+                    border: dashed #fff;
+                    border-radius: 100%;
+                }
+                .tam-equema {
+                    height: 20rem;
+                    width: 20rem;
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-left: -3rem;
+                    margin-top: -3rem;
+                }
+                .moversito{
+                    margin-right: 0rem;
+                    margin-top: 7rem;
+                }
+                .bolita {
+                    width: 4rem;
+                    height: 4rem;
+                    background-color: #fff;
+                    border-radius: 100%;
+                    transition: 0.4s ease all;
+                }
+                   .moversito{
+                    margin-right: 0rem;
+                    margin-top: 9rem;
+                }
+    }
+    @media only screen and (max-width: 600px) and (min-width: 451px){ 
         .programa {
             margin-left: 3rem;
             font-size: 1.9rem;
@@ -178,14 +275,103 @@ export default {
             margin-bottom: 4rem;
             color: #fff;
         }
+          .font-texto-programa {
+            color: #fff;
+            font-size: 0.8rem;
+            text-align: justify;
+            transition: all ease 2s;
+        }
+        .borde-animacion {
+            width: 15rem;
+            height: 15rem;
+            border: dashed #fff;
+            border-radius: 100%;
+        }
+        .tam-equema {
+            height: 20rem;
+            width: 20rem;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: -3rem;
+            margin-top: -3rem;
+        }
+        .moversito{
+            margin-right: 0rem;
+            margin-top: 7rem;
+        }
+        .bolita {
+            width: 4rem;
+            height: 4rem;
+            background-color: #fff;
+            border-radius: 100%;
+            transition: 0.4s ease all;
+        }
+        .moversito{
+            margin-right: 0rem;
+            margin-top: 7rem;
+        }
     }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 768px) and (min-width: 601px){
+        .fuente {
+            font-family: 'Kollektif';
+            color: #ffffff;
+            width: 21rem!important;
+            font-size: 1.5rem;
+        }
         .programa {
             margin-left: 3rem;
             font-size: 1.9rem;
             padding: 0;
-            margin-bottom: 4rem;
+            margin-bottom: 2rem;
             color: #fff;
+        }
+        .response{
+            height: 100%;
+        }
+        .programa::after {
+            content: '';
+            display: block;
+            height: 0.2rem;
+            width: 100%;
+            background-color: #fff;
+            margin-left: -3rem;
+        }
+        .font-texto-programa {
+            color: #fff;
+            font-size: 0.8rem;
+            text-align: justify;
+            transition: all ease 2s;
+        }
+        .borde-animacion {
+            width: 15rem;
+            height: 15rem;
+            border: dashed #fff;
+            border-radius: 100%;
+        }
+        .tam-equema {
+            height: 20rem;
+            width: 20rem;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: -3rem;
+            margin-top: -3rem;
+        }
+        .moversito{
+            margin-right: 0rem;
+            margin-top: 7rem;
+        }
+        .bolita {
+            width: 4rem;
+            height: 4rem;
+            background-color: #fff;
+            border-radius: 100%;
+            transition: 0.4s ease all;
         }
     }
 </style>

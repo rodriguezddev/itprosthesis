@@ -1,85 +1,85 @@
 <template>
     <div data-aos="zoom-out" class="margin-equipo"  style="transition: 0.4s all ease;">
         <div class="row justify-content-end m-0">
-            <h2 class="Equipo col-md-3">EQUIPO</h2>
+            <h2 class="nuestros  p-0 col-md-3" style=" font-family: 'Kollektif';">EQUIPO</h2>
         </div>
         <div  class="row justify-content-cernter max-uno">
             <div class="row flex-column align-items-center m-0 tam-per" @mouseover="agg(ids[0])" :style="'background:' + fondo" @mouseout="volver()">
-                <img src="@/assets/fotosdeperfil/Piero.jpg" alt="" class="perfil-primera-fila auno">
-                <div class="text-center">
-                    <h4>Piero Comsme</h4>
-                    <h5 class="cargo" :class="{cargoHo : sobre}" >FUNDADOR Y CEO</h5>
-                    <a href="https://www.linkedin.com/in/piero-cosme-velasco-01390b140/" class="colorsTO">Linkedin</a>
+                <img src="@/assets/fotosdeperfil/Piero.png" alt="" class="perfil-primera-fila auno">
+                <div class="text-center mt-4">
+                    <h4 style=" font-family: 'aileron-SemiBold';" class="m-0">Piero Cosme</h4>
+                    <h5 class="cargo m-0" style=" font-family: 'aileron-SemiBold';" :class="{cargoHo : sobre}" >FUNDADOR Y CEO</h5>
+                    <a href="https://www.linkedin.com/in/piero-cosme-velasco-01390b140/" class="colorsTO" style=" font-family: 'aileron-SemiBold'; text-decoration:revert;">LinkedIn</a>
                 </div>
             </div>
             <div class="row flex-column align-items-center m-0 tam-per" @mouseover="aggi(ids[1])" :style="'background:' + fondoi" @mouseout="volver()">
-                <img src="@/assets/fotosdeperfil/Franco.jpg" alt="" class="perfil-primera-fila ados">
-                <div class="text-center">
-                    <h4>Franco Carlini</h4>
-                    <h5 class="cargo" :class="{cargoHo : sobrea}">FUNDADOR Y COO</h5>
-                    <a href="https://www.linkedin.com/in/franco-giovanni-carlini-camaiora-912b9a149/" class="colorsTO">Linkedin</a>
+                <img src="@/assets/fotosdeperfil/Franco.png" alt="" class="perfil-primera-fila ados">
+                <div class="text-center mt-4">
+                    <h4 style=" font-family: 'aileron-SemiBold';" class="m-0" >Franco Carlini</h4>
+                    <h5 class="cargo m-0" style=" font-family: 'aileron-SemiBold';" :class="{cargoHo : sobrea}">FUNDADOR Y COO</h5>
+                    <a href="https://www.linkedin.com/in/franco-giovanni-carlini-camaiora-912b9a149/" style=" font-family: 'aileron-SemiBold'; text-decoration:revert;" class="colorsTO">LinkedIn</a>
                 </div>
             </div>
         </div>
 
          <div  class="row justify-content-around max-dos">
             <div class="row flex-column align-items-center m-0 tam-per-card-s col-lg-4 col-md-4" @mouseover="agga(ids[2])" :style="'background:' + fondoa" @mouseout="volver()">
-                <img src="@/assets/fotosdeperfil/dunia.jpg" alt="" class="perfil-segunda-fila atres">
-                <div class="text-center">
-                    <h4>Dunia Felices</h4>
-                    <h5 class="cargo" :class="{cargoHo : sobreb}">CCO</h5>
-                    <a href="https://instagram.com/duniafelices?igshid=mjn7cb8zrysk" class="colorsTO">Instagram</a>
+                <img src="@/assets/fotosdeperfil/Dunia.png" alt="" class="perfil-segunda-fila atres">
+                <div class="text-center mt-4">
+                    <h4 style=" font-family: 'aileron-SemiBold'; " class="m-0">Dunia Felices</h4>
+                    <h5  style=" font-family: 'aileron-SemiBold';" class="cargo m-0" :class="{cargoHo : sobreb}">CCO</h5>
+                    <a style=" font-family: 'aileron-SemiBold'; text-decoration:revert;" href="https://instagram.com/duniafelices?igshid=mjn7cb8zrysk" class="colorsTO">Instagram</a>
                 </div>
             </div>
             <div class="row flex-column align-items-center m-0 tam-per-card-s col-lg-4 col-md-4" @mouseover="aggb(ids[3])" :style="'background:' + fondob" @mouseout="volver()">
-                <img src="@/assets/fotosdeperfil/Renato.jpg" alt="" class="perfil-segunda-fila acuatro">
-                <div class="text-center">
-                    <h4>Renato Corahua</h4>
-                    <h5 class="cargo" :class="{cargoHo : sobrec}">LIDER DE I&D</h5>
-                    <a href="https://www.linkedin.com/in/renato-corahua-benites/" class="colorsTO">Linkedin</a>
+                <img src="@/assets/fotosdeperfil/Renato.png" alt="" class="perfil-segunda-fila acuatro">
+                <div style=" font-family: 'aileron-bold';" class="text-center mt-4">
+                    <h4 style=" font-family: 'aileron-SemiBold';" class="m-0">Renato Corahua</h4>
+                    <h5 style=" font-family: 'aileron-SemiBold';" class="cargo m-0" :class="{cargoHo : sobrec}">LÍDER DE I&D</h5>
+                    <a style=" font-family: 'aileron-SemiBold'; text-decoration:revert;" href="https://www.linkedin.com/in/renato-corahua-benites/" class="colorsTO">LinkedIn</a>
                 </div>
             </div>
               <div class="row flex-column align-items-center m-0 tam-per-card-s col-lg-4 col-md-4" @mouseover="aggc(ids[4])" :style="'background:' + fondoc" @mouseout="volver()">
-                <img src="@/assets/fotosdeperfil/Mariana.jpg" alt="" class="perfil-segunda-fila acinco">
-                <div class="text-center">
-                    <h4>Mariana De La Piedra</h4>
-                    <h5 class="cargo" :class="{cargoHo : sobred}">LIDER DE IMPACTO SOCIAL</h5>
-                    <a href="https://www.linkedin.com/in/mariana-de-la-piedra-alayza-907566131/" class="colorsTO">Linkedin</a>
+                <img src="@/assets/fotosdeperfil/Mariana.png" alt="" class="perfil-segunda-fila acinco">
+                <div class="text-center mt-4">
+                    <h4 style=" font-family: 'aileron-SemiBold';" class="m-0">Mariana De La Piedra</h4>
+                    <h5 style=" font-family: 'aileron-SemiBold';" class="cargo m-0" :class="{cargoHo : sobred}">LÍDER DE IMPACTO SOCIAL</h5>
+                    <a style=" font-family: 'aileron-SemiBold'; text-decoration:revert;" href="https://www.linkedin.com/in/mariana-de-la-piedra-alayza-907566131/" class="colorsTO">LinkedIn</a>
                 </div>
             </div>
         </div>
 
          <div class="row justify-content-around max-perfil-tres">
             <div class="row flex-column align-items-center m-0 tam-per-card-t" @mouseover="aggd(ids[5])" :style="'background:' + fondod" @mouseout="volver()">
-                <img src="@/assets/fotosdeperfil/Steve.jpg" alt="" class="perfil-tercera-fila aseis">
-                <div class="text-center">
-                    <h4>Steve Surichanqui</h4>
-                    <h5 class="cargo" :class="{cargoHo : sobree}">I&D</h5>
-                    <a href="https://www.linkedin.com/in/steve-surichaqui/" class="colorsTO">Linkedin</a>
+                <img src="@/assets/fotosdeperfil/Steve.png" alt="" class="perfil-tercera-fila aseis">
+                <div class="text-center mt-4" >
+                    <h4 style=" font-family: 'aileron-SemiBold';" class="m-0">Steve Surichanqui</h4>
+                    <h5 style=" font-family: 'aileron-SemiBold';" class="cargo m-0" :class="{cargoHo : sobree}">I&D</h5>
+                    <a style=" font-family: 'aileron-SemiBold'; text-decoration:revert;" href="https://www.linkedin.com/in/steve-surichaqui/" class="colorsTO">LinkedIn</a>
                 </div>
             </div>
             <div class="row flex-column align-items-center m-0 tam-per-card-t" @mouseover="agge(ids[6])" :style="'background:' + fondoe" @mouseout="volver()">
-                <img src="@/assets/fotosdeperfil/Luz.jpg" alt="" class="perfil-tercera-fila asiete">
-                <div class="text-center">
-                    <h4>Luz Melgarejo</h4>
-                    <h5 class="cargo" :class="{cargoHo : sobref}">IMPACTO SOCIAL</h5>
-                    <a href="https://www.linkedin.com/in/luzmelgarejohuisa/" class="colorsTO">Linkedin</a>
+                <img src="@/assets/fotosdeperfil/Luz.png" alt="" class="perfil-tercera-fila asiete">
+                <div class="text-center mt-4">
+                    <h4 style=" font-family: 'aileron-SemiBold';" class="m-0">Luz Melgarejo</h4>
+                    <h5 style=" font-family: 'aileron-SemiBold';" class="cargo m-0" :class="{cargoHo : sobref}">IMPACTO SOCIAL</h5>
+                    <a style=" font-family: 'aileron-SemiBold'; text-decoration:revert;" href="https://www.linkedin.com/in/luzmelgarejohuisa/" class="colorsTO">LinkedIn</a>
                 </div>
             </div>
               <div class="row flex-column align-items-center m-0 tam-per-card-t" @mouseover="aggf(ids[7])" :style="'background:' + fondof" @mouseout="volver()">
-                <img src="@/assets/fotosdeperfil/Piero.jpg" alt="" class="perfil-tercera-fila aocho">
-                <div class="text-center">
-                    <h4>Daniella Rivero</h4>
-                    <h5 class="cargo" :class="{cargoHo : sobreg}">I&D</h5>
-                    <a href="https://www.linkedin.com/in/daniella-rivero-leveroni-37b955191" class="colorsTO">Linkedin</a>
+                <img src="@/assets/fotosdeperfil/Daniela.png" alt="" class="perfil-tercera-fila aocho">
+                <div class="text-center mt-4">
+                    <h4 style=" font-family: 'aileron-SemiBold';" class="m-0">Daniella Rivero</h4>
+                    <h5 style=" font-family: 'aileron-SemiBold';" class="cargo m-0" :class="{cargoHo : sobreg}">I&D</h5>
+                    <a style=" font-family: 'aileron-SemiBold'; text-decoration:revert;" href="https://www.linkedin.com/in/daniella-rivero-leveroni-37b955191" class="colorsTO">LinkedIn</a>
                 </div>
             </div>
               <div class="row flex-column align-items-center m-0 tam-per-card-t" @mouseover="aggg(ids[8])" :style="'background:' + fondog" @mouseout="volver()">
-                <img src="@/assets/fotosdeperfil/Aaron.jpg" alt="" class="perfil-tercera-fila anueve">
-                <div class="text-center">
-                    <h4>Aaron Llican</h4>
-                    <h5 class="cargo" :class="{cargoHo : sobrei}">I&D</h5>
-                    <a href="https://www.linkedin.com/in/aaron-daniel-llican-diaz-537115208" class="colorsTO">Linkedin</a>
+                <img src="@/assets/fotosdeperfil/Aaron.png" alt="" class="perfil-tercera-fila anueve">
+                <div class="text-center mt-4">
+                    <h4 style=" font-family: 'aileron-SemiBold';" class="m-0">Aaron Llican</h4>
+                    <h5 style=" font-family: 'aileron-SemiBold';" class="cargo m-0" :class="{cargoHo : sobrei}">I&D</h5>
+                    <a style=" font-family: 'aileron-SemiBold'; text-decoration:revert;" href="https://www.linkedin.com/in/aaron-daniel-llican-diaz-537115208" class="colorsTO">LinkedIn</a>
                 </div>
             </div>
         </div>
@@ -269,7 +269,7 @@ export default {
         color:#fff!important;
     }
     .max-perfil{
-        max-width: 75rem;
+        max-width: 78rem;
         margin: 0rem auto 0rem auto!important;
         padding-bottom: 5rem;
     }
@@ -307,12 +307,16 @@ export default {
         transition: 0.4s all ease;
     }
     .max-uno{
-        max-width: 43%;
+        max-width: 60%;
         margin: 0 auto!important;
+        display: flex;
+        justify-content: center;
     }
     .max-dos{
         max-width: 75%;
         margin: 0 auto!important;
+        display: flex;
+        justify-content: center;
     }
     @media only screen and (max-width: 320px){
         .tam-per-card-t {
@@ -322,8 +326,8 @@ export default {
         }
         .perfil-primera-fila {
             border-radius: 100%;
-            width: 19rem;
-            height: 19rem;
+            width: 15rem!important;
+            height: 15rem;
         }
         .perfil-segunda-fila {
             border-radius: 100%;
@@ -375,6 +379,12 @@ export default {
             border: dashed #fff;
             border-radius: 100%;
         }
+             .Equipo{
+                margin-left:3rem;
+                font-size: 2rem;
+                padding: 0;
+                margin-bottom:4rem;
+            }
     }
     @media only screen and (max-width: 450px) and (min-width: 321px){
         .tam-per-card-t {
@@ -384,8 +394,8 @@ export default {
         }
         .perfil-primera-fila {
             border-radius: 100%;
-            width: 19rem;
-            height: 19rem;
+            width: 15rem!important;
+            height: 15rem;
         }
         .perfil-segunda-fila {
             border-radius: 100%;
@@ -394,14 +404,20 @@ export default {
         }
         .perfil-tercera-fila {
             border-radius: 100%;
-            width: 19rem;
-            height: 19rem;
+            width: 15rem!important;
+            height: 15rem;
         }
         .tam-per-card-t {
             width: 100%;
             padding: 1rem;
             transition: 0.4s all ease;
         }
+              .Equipo{
+                margin-left:3rem;
+                font-size: 2rem;
+                padding: 0;
+                margin-bottom:4rem;
+            }
     }
     
     @media only screen and (max-width: 600px) and (min-width: 451px) {
@@ -425,6 +441,12 @@ export default {
             padding: 4rem;
             transition: 0.4s all ease;
         }
+              .Equipo{
+                margin-left:3rem;
+                font-size: 2rem;
+                padding: 0;
+                margin-bottom:4rem;
+            }
 }
     @media only screen and (max-width: 768px) and (min-width: 601px){
         .color-contacto{
@@ -478,14 +500,25 @@ export default {
                 height: 14rem;
             }
             .tam-per-card-t {
-                width: 50%;
-                padding: 4rem;
+                width: 25%;
+                padding: 0rem;
                 transition: 0.4s all ease;
             }
             .perfil-tercera-fila {
                 border-radius: 100%;
                 width: 15rem;
                 height: 15rem;
+            }
+            .max-perfil-tres {
+                max-width: 95rem;
+                margin: 0rem auto 0rem auto!important;
+                padding-bottom: 5rem;
+                padding: 1rem;
+            }
+            .perfil-tercera-fila {
+                border-radius: 100%;
+                width: 11rem;
+                height: 11rem;
             }
     }
 </style>

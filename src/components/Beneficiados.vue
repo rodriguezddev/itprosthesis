@@ -3,16 +3,16 @@
         <div data-aos="fade-up" class="max-fomulario">
             <h3 class="text-center texto-form aaa">¿Desea ser beneficiado?</h3>
             <form 
-               @submit.prevent="" class="row m-0 flex-column align-items-end">
-                <label class="texto-form">Déjanos tu datos y uno de nuestros asesores se comunicará contigo</label>
+               @submit.prevent="sendEmail()" class="row m-0 flex-column align-items-end">
+                <label class="texto-form">Déjanos tu datos y uno de nuestros asesores se comunicará contigo.</label>
                 <div class="row flex-column m-0 w-100">
                     <input type="text" v-model="nombre" placeholder="Nombre" class="input-form">
                     <input type="text" v-model="telefono" placeholder="Teléfono" class="input-form">
                     <input type="text" v-model="correo" placeholder="Correo" class="input-form">
-                    <input type="text" v-model="amputación" placeholder="Tipo de amputacion" class="input-form">
-                    <input type="text" v-model="ocupación" placeholder="Ocupación" class="input-form">
+                    <input type="text" v-model="amputacion" placeholder="Tipo de amputación" class="input-form">
+                    <input type="text" v-model="ocupacion" placeholder="Ocupación" class="input-form">
                 </div>
-                <button type="submit" @click="sendEmail" class="boton-form mt-4 pt-2 pb-2 pl-3 pr-3">Enviar</button>
+                <button type="submit" class="boton-form mt-4 pt-2 pb-2 pl-3 pr-3">Enviar</button>
             </form>
         </div>
     </div>
@@ -38,10 +38,10 @@ export default {
           sendEmail() {
               console.log(this.nombre, this.telefono, this.correo, this.amputacion, this.ocupacion)
                emailjs.init("user_Cpgc30JWe1k6Pr7DyHBWC");
-               var mensaje = 'Lorem soul' + this.telefono + this.correo + this.amputacion + this.ocupacion
-                            
+               var mensaje = 'Anexo en este correo mi \n numero de telefono: ' + this.telefono  + ',\n mi email: ' + this.correo + ',\n el tipo de amputacion: ' + this.amputacion + ',\n ocupacion: ' + this.ocupacion
+                console.log(mensaje)    
             try {
-                emailjs.send( 'service_uv7vfbe' , 'template_k75vbzl', {
+                emailjs.send( 'service_oi9ik9o' , 'template_d0pkh7v', {
                 nombre: this.nombre,
                 mensaje: mensaje
                 })
@@ -54,8 +54,18 @@ export default {
         this.correo = ''
         this.amputacion = ''
         this.ocupacion = ''
+        this.openNotification('top-right', 'success', `<i class='bx bx-select-multiple' ></i>`)
         },
+        openNotification(position = null, color, icon) {
+          const noti = this.$vs.notification({
+            icon,
+            color,
+            position,
+            title: 'GENIAL! 😊',
+            text: `Tu solicitud se ha enviado con exito 👍`
+          })
     },
+    }
 }
 </script>
 <style>
@@ -82,7 +92,7 @@ export default {
         border: none;
         border-bottom: solid #fff 1px;
         color: #fff;
-        padding: 1rem;
+        padding: 1rem 0rem;
     }
     .input-form::placeholder {
         color: #fff;
