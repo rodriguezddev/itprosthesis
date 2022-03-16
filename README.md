@@ -1,4 +1,4 @@
-# itpro
+# itprosthesis
 
 ## Project setup
 ```
